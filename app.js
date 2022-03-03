@@ -1,6 +1,10 @@
 function tripleTrouble(one, two, three){
     //Solution
-    return one+two+three;
+    var myArr = [];
+    for (var i = 0; i < one.length; i++){
+            myArr.push(one[i], two[i], three[i]);
+    }
+    return myArr.join('');
 }
 
 console.log(tripleTrouble("aaa", "bbb", "ccc")); // return "abcabcabc"
